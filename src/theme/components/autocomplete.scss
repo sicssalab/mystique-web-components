@@ -33,3 +33,28 @@
     min-height: 52px;
   }
 }
+
+@media (max-width: $sm) {
+  .mystick-double-autocomplete {
+    flex-direction: column;
+    gap: 20px;
+    .container-autocomplete-single {
+      .wrapper {
+        border-radius: $borderAutocomplete;
+        .dYrfwz {
+          min-height: 50px;
+        }
+      }
+      &:first-child {
+        .wrapper {
+          border-radius: $borderAutocomplete;
+        }
+      }
+      &:nth-child(even) {
+        .wrapper {
+          border-radius: $borderAutocomplete;
+        }
+      }
+    }
+  }
+}

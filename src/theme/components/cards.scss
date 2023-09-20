@@ -1,0 +1,64 @@
+.card-image-grad {
+  --max-width-card: 300px;
+  --max-height-card: 250px;
+  padding: 0;
+  border: 0;
+  position: relative;
+  > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 0.25rem;
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
+    top: 0;
+    .content-description {
+      position: absolute;
+      height: 100%;
+      display: flex;
+      line-height: 1.33;
+      align-items: flex-end;
+      padding-bottom: 1.75rem;
+      padding-left: 1.5rem;
+      color: white;
+      gap: 10px;
+    }
+  }
+  img {
+    width: var(--max-width-card);
+    height: var(--max-height-card);
+    border-radius: var(--bs-btn-border-radius);
+  }
+}
+
+.card-image-tall-grad {
+  --max-width-card: 300px;
+  max-width: var(--max-width-card);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  .content-text {
+    max-width: var(--max-width-card);
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.card-d-boots {
+  .card-text {
+    transition: 1s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
