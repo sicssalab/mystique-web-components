@@ -1,0 +1,35 @@
+.mystick-double-autocomplete {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  .container-autocomplete-single {
+    flex-grow: 1;
+    .wrapper {
+      border-radius: $borderAutocomplete;
+      .dYrfwz {
+        min-height: 50px;
+      }
+    }
+    &:first-child {
+      .wrapper {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+      }
+    }
+    &:nth-child(even) {
+      .wrapper {
+        border-radius: 0;
+      }
+    }
+  }
+  > button {
+    border-radius: $borderAutocomplete;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    min-height: 52px;
+  }
+}

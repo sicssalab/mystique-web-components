@@ -1,0 +1,10 @@
+@import "./variable.scss";
+
+$theme-colors: (
+    "primary": $primary,
+    // "secondary": $secondary,
+    // "danger": $danger,
+    // "info": $info,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
