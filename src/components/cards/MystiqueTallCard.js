@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MystiqueTallCard = (props) => {
-  const { href, srcImage, alt, name, iconObjet } = props;
+  const { href, srcImage, alt, name, iconObject } = props;
   return (
     <div className="card-image-tall-grad">
       <Button className="card-image-grad" href={href}>
@@ -13,7 +13,7 @@ const MystiqueTallCard = (props) => {
         />
       </Button>
       <Button className="content-text" href={href}>
-        {iconObjet}
+        {iconObject}
         <span>{name}</span>
       </Button>
     </div>

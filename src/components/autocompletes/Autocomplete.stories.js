@@ -54,7 +54,7 @@ const formatResult = (item) => {
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 const funcionGlobals = {
   onSelectItem: (item) => {
-    console.log(item)
+    console.info(item)
   }
 }
 export const Primary = {

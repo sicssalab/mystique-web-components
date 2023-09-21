@@ -1,7 +1,7 @@
 import { ReactSearchAutocomplete } from "react-search-autocomplete";
 
 const Autocomplete = (props) => {
-    const {formatResult, items, onSelectItem, style, ...rest} = props;
+    const {formatResult, items, onSelectItem, onClear, style, ...rest} = props;
 
   // eslint-disable-next-line no-unused-vars
   const handleOnSearch = (string, results) => {
@@ -28,10 +28,6 @@ const Autocomplete = (props) => {
     console.log("Focused");
   };
 
-  const onClear = () => {
-    console.log("elimine con la x")
-
-  }
   return (
         <div className="container-autocomplete-single" style={{ minWidth: 200, ...style }}>
           <ReactSearchAutocomplete

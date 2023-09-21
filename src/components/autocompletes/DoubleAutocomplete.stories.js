@@ -39,17 +39,28 @@ const items = [
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary = {
   args: {
-    primary: true,
     label: 'Search',
     startItems: items,
     endItems: items,
     placeholderStart: "Destino",
     placeholderEnd: "Categoría",
-    onSelectStartItem: (item) => {
-      console.log("start item", item)
+    textEmpySearchs: "Selecciona un resultado de la lista de búsqueda",
+    onSubmit: (item, itemEnd) => {
+      console.info("start item", item)
     },
-    onSelectEndItem: (item) => {
-      console.log("end item", item)
+  },
+};
+
+export const Secondary = {
+  args: {
+    label: 'Search',
+    startItems: [],
+    endItems: [],
+    placeholderStart: "Destino",
+    placeholderEnd: "Categoría",
+    textEmpySearchs: "Selecciona un resultado de la lista de búsqueda",
+    onSubmit: (item, itemEnd) => {
+      console.info("start item", item)
     },
   },
 };
