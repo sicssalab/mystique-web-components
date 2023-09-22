@@ -1,5 +1,5 @@
+import React from "react";
 import { Button } from "react-bootstrap";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "react-bootstrap/Card";
 
 const MystiqueCardBootstrap = (props) => {
