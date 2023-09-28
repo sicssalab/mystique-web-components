@@ -16,5 +16,6 @@ const config = {
     autodocs: "tag",
   },
   staticDir: ["..\\public"],
+  staticDirs: ["..\\public"],
 };
 export default config;

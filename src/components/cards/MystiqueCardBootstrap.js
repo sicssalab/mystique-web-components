@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-
+//import PropTypes from "prop-types";
 const MystiqueCardBootstrap = (props) => {
   const { href, srcImage, name, sendPriceText, description } =
     props;
@@ -16,5 +16,12 @@ const MystiqueCardBootstrap = (props) => {
     </Card>
   );
 };
-
+// MystiqueCardBootstrap.propTypes = {
+//   disabled: PropTypes.bool,
+//   label: PropTypes.string,
+//   onClick: PropTypes.func
+// };
+// MystiqueCardBootstrap.defaultProps = {
+//   disabled: false
+// };
 export default MystiqueCardBootstrap;

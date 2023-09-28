@@ -1,13 +1,16 @@
 {
   "name": "mystique-web-components",
-  "version": "0.0.109",
+  "version": "0.0.116",
   "private": false,
-  "main": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
   "scripts": {
-    "start": "react-scripts start",
+    "prepare": "npm run dist",
+    "distA": "rm -rf dist/* && babel src/ --out-dir dist --copy-files --no-copy-ignored --ignore src/**/*.stories.js",
+    "dist": "babel src/ --out-dir dist --copy-files --no-copy-ignored --ignore src/**/*.stories.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -30,8 +33,18 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {},
+  "peerDependencies": {
+    "bootstrap": "^5.3.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-search-autocomplete": "^8.5.2"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/plugin-transform-react-jsx": "^7.22.15",
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.22.15",
     "@storybook/addon-essentials": "^7.4.3",
@@ -47,15 +60,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "babel-plugin-named-exports-order": "^0.0.2",
-    "bootstrap": "^5.3.2",
     "eslint-plugin-storybook": "^0.6.13",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.8.0",
-    "react-dom": "^18.2.0",
-    "react-lazy-load-image-component": "^1.6.0",
     "react-scripts": "5.0.1",
-    "react-search-autocomplete": "^8.5.2",
     "sass": "^1.67.0",
     "storybook": "^7.4.3",
     "web-vitals": "^2.1.4",

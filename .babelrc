@@ -2,5 +2,13 @@
     "presets": [
         "@babel/preset-react",
         "@babel/preset-env"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-react-jsx",
+            {
+                "runtime": "automatic"
+            }
+        ]
     ]
 }
