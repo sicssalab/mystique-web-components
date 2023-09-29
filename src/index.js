@@ -1,14 +1,14 @@
-// import Autocomplete from "../src/components/autocompletes/Autocomplete";
-// import DoubleAutocomplete from "../src/components/autocompletes/DoubleAutocomplete";
-//import MystiqueCard from "../src/components/cards/MystiqueCard";
-import MystiqueCardBootstrap from "../src/components/cards/MystiqueCardBootstrap";
-//import MystiqueTallCard from "../src/components/cards/MystiqueTallCard";
+import Autocomplete from "./components/autocompletes/Autocomplete";
+import DoubleAutocomplete from "./components/autocompletes/DoubleAutocomplete";
+import MystiqueCard from "./components/cards/MystiqueCard";
+import MystiqueCardBootstrap from "./components/cards/MystiqueCardBootstrap";
+import MystiqueTallCard from "./components/cards/MystiqueTallCard";
 
 export {
-  // Autocomplete,
-  // DoubleAutocomplete,
-  //MystiqueCard,
+  Autocomplete,
+  DoubleAutocomplete,
+  MystiqueCard,
   MystiqueCardBootstrap,
-  //MystiqueTallCard,
+  MystiqueTallCard,
 }
 
