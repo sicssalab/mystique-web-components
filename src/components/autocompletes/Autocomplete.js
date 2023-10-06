@@ -38,6 +38,7 @@ const Autocomplete = (props) => {
             onSelect={handleOnSelect}
             //onFocus={handleOnFocus}
             autoFocus
+            //inputSearchString={"JavaScript"}//TODO sirve para inicializar un texto pero sin informacion seleccionada
             formatResult={formatResult}
             {...rest}
           />

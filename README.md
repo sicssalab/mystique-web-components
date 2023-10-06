@@ -17,3 +17,5 @@ y solo faltaria mandarlo a instalar en otro proyecto si los dos prtoyectos estan
 yarn add ..\mystique-web-components\mystique-web-components-0.0.117.tgz
 
 Si no truena, ya la armaste!
+
+para publicar en npm publish

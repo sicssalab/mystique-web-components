@@ -12,6 +12,9 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
+    variant: {
+      options: ["primary", "outline-primary"]
+    }
   },
 };
 
@@ -21,7 +24,8 @@ export const Primary = {
     srcImage: "https://media-api.xogrp.com/images/e913da1b-9675-4dd0-bbc8-bbc0bee1e907~sc_300.250",
     name: "Reception Venues",
     description: "JSPStudio captura la personalidad íntima del día de su boda, sin importar la ubicación, la hora del día, el tono, la escala o la temporada. La capacidad de nuestros pequeños",
-    sendPriceText:"Solicitar Precios"
+    sendPriceText:"Solicitar Precios",
+    tag: "Quintana roo",
   },
 };
 

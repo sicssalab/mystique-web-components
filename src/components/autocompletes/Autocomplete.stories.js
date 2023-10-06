@@ -62,27 +62,16 @@ export const Primary = {
     primary: true,
     label: 'Search',
     items,
-    formatResult,
     ...funcionGlobals
   },
 };
 
-// export const Secondary = {
-//   args: {
-//     label: 'Button',
-//   },
-// };
-
-// export const Large = {
-//   args: {
-//     size: 'large',
-//     label: 'Button',
-//   },
-// };
-
-// export const Small = {
-//   args: {
-//     size: 'small',
-//     label: 'Button',
-//   },
-// };
+export const Secondary = {
+  args: {
+    primary: true,
+    label: 'Search',
+    items,
+    inputSearchString: "JavaScript",
+    ...funcionGlobals
+  },
+};

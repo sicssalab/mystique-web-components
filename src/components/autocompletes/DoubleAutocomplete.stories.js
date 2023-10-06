@@ -36,8 +36,28 @@ const items = [
     name: "Java",
   },
 ];
+const funcionGlobals = {
+  onSubmit: (item, itemEnd) => {
+    console.info("start item", item)
+    console.info("end item", itemEnd)
+  },
+}
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary = {
+  args: {
+    label: 'Search',
+    startItems: items,
+    endItems: items,
+    startInputSearchString: "JavaScript",
+    endInputSearchString: "Basic",
+    placeholderStart: "Destino",
+    placeholderEnd: "Categoría",
+    textEmpySearchs: "Selecciona un resultado de la lista de búsqueda",
+    ...funcionGlobals
+  },
+};
+
+export const Secondary = {
   args: {
     label: 'Search',
     startItems: items,
@@ -45,13 +65,11 @@ export const Primary = {
     placeholderStart: "Destino",
     placeholderEnd: "Categoría",
     textEmpySearchs: "Selecciona un resultado de la lista de búsqueda",
-    onSubmit: (item, itemEnd) => {
-      console.info("start item", item)
-    },
+    ...funcionGlobals
   },
 };
 
-export const Secondary = {
+export const EmptyElement = {
   args: {
     label: 'Search',
     startItems: [],
@@ -59,28 +77,28 @@ export const Secondary = {
     placeholderStart: "Destino",
     placeholderEnd: "Categoría",
     textEmpySearchs: "Selecciona un resultado de la lista de búsqueda",
-    onSubmit: (item, itemEnd) => {
-      console.info("start item", item)
-    },
+    ...funcionGlobals
   },
 };
 
-// export const Secondary = {
-//   args: {
-//     label: 'Button',
-//   },
-// };
-
-// export const Large = {
-//   args: {
-//     size: 'large',
-//     label: 'Button',
-//   },
-// };
-
-// export const Small = {
-//   args: {
-//     size: 'small',
-//     label: 'Button',
-//   },
-// };
+export const ElementSelectDefault = {
+  args: {
+    label: 'Search',
+    startItems: items,
+    endItems: items,
+    startInputSearchString: "JavaScript",
+    endInputSearchString: "Basic",
+    itemStartInitial: {
+      id: 1,
+      name: "JavaScript",
+    },
+    itemEndInitial: {
+      id: 2,
+      name: "Basic",
+    },
+    placeholderStart: "Destino",
+    placeholderEnd: "Categoría",
+    textEmpySearchs: "Selecciona un resultado de la lista de búsqueda",
+    ...funcionGlobals
+  },
+};
