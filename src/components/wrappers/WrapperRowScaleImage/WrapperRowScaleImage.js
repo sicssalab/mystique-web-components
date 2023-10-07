@@ -1,3 +1,4 @@
+import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useMediaQuery } from "react-responsive";
